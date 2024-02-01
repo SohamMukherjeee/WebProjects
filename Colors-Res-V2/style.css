@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hex-color{
+  text-align: center;    
+}
+.hex-color h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+.hex-color h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+@keyframes changecolor{
+    0%{
+        color: aqua;
+    }
+
+    20%{
+        color: rgb(255, 77, 0);
+    }
+    40%{
+        color: rgb(5, 1, 252);
+    }
+    60%{
+        color: rgb(18, 135, 245);
+    }
+    80%{
+        color: rgb(174, 0, 255);
+    }
+    100%{
+        color: rgb(255, 0, 106);
+    }
+}
+@media(max-width:480px){
+    .hex-color h1{
+        font-size: 1.5rem;
+    }
+    .hex-color h2{
+        font-size: 1.5rem;
+    }
+}
